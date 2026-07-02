@@ -1,7 +1,7 @@
 package com.example.demo.controller;
 
 import com.example.demo.entity.DocenteEntity;
-import com.example.demo.service.PasswordService; 
+import com.example.demo.service.DocenteService; 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,7 +14,7 @@ import java.util.List;
 public class DocenteController {
 
     @Autowired
-    private PasswordService docenteService;
+    private DocenteService docenteService;
 
     @GetMapping
     public List<DocenteEntity> listar() {
